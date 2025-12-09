@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar_html</title>
+    <!-- gunakan styles.css yang berada di folder JavaScript -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="judul">Selamat Datang di Belajar Java Script</h1>
+    <input type="text" id="inputNama" placeholder="Masukkan nama Anda">
+    <!-- Tambahkan id agar event listener bekerja dengan aman -->
+    <button id="sapaBtn" onclick="sapa()">Sapa Saya</button>
+    <br><br>
+
+    <!-- Ganti dua tombol warna menjadi satu tombol toggle -->
+    <button id="ubahWarnaBtn" onclick="cycleTextColor()" class="cycle-color-btn" data-target="judul">Ganti Warna</button>
+    <br><br>
+
+    <!-- Tambah tombol untuk ganti background -->
+    <button id="ubahBgBtn" class="bg-cycle-btn" onclick="cycleBackground('ubahBgBtn')">Ganti Background</button>
+    <br><br>
+
+    <!-- Tambahkan tombol satu klik untuk musik -->
+    <button id="musicBtn" onclick="toggleMusic()" data-audio="music1">Play Music</button>
+
+    <!-- Sesuaikan script src relatif ke folder JavaScript -->
+    <script src="hallo.js"></script>
+    <script src="sapa.js"></script>
+    <script src="ubah_warna.js"></script>
+    <script src="music.js"></script>
+
+    <!-- audio: gunakan path relatif ke folder audio (naik dua tingkat ke Belajar_html) -->
+    <audio id="music1" src="/epic moment.mp3" preload="none" loop></audio>
+    <!-- Tambahkan spot untuk menampilkan greeting di halaman (opsional) -->
+    <div id="greeting" aria-live="polite"></div>
+</body>
+</html>

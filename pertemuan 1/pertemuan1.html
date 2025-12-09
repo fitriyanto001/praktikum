@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<title>Portofolio Saya</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h1 id="judul2" class="text-center">Portofolio Saya</h1>
+        <p class="intro">Nama: Fitriyanto</p>
+        <p class="intro">Profesi: Teknisi</p>
+        <h2>Pengalaman Kerja</h2>
+        <table class="projects">
+            <tr>
+                <th>Periode / Peran</th>
+                <th>Deskripsi</th>
+            </tr>
+            <tr>
+                <td>2021 — Magang: Teknisi Jaringan</td>
+                <td>Magang di Telkom Banjarbaru — instalasi & pemeliharaan jaringan</td>
+            </tr>
+            <tr>
+                <td>2022 — Assistance Technician</td>
+                <td>Assistance Technician di Twicom — dukungan troubleshooting & pemasangan</td>
+            </tr>
+        </table>
+
+        <h2>Proyek</h2>
+        <table class="projects">
+            <tr>
+                <th>Nama Proyek</th>
+                <th>Deskripsi</th>
+            </tr>
+            <tr>
+                <td>Repair Fiber Optic</td>
+                <td>Menyambung kabel fiber optik dengan splicer</td>
+            </tr>
+            <tr>
+                <td>Admin</td>
+                <td>Input Foto data kerja lapangan dari teknisi ke web</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- tombol untuk toggle warna -->
+<button id="ubahWarnaBtn2" class="cycle-color-btn" data-target="judul2" onclick="cycleTextColorFor('judul2','ubahWarnaBtn2')">Ganti Warna</button>
+
+<!-- tombol untuk ganti background -->
+<button id="ubahBgBtn2" class="bg-cycle-btn" onclick="cycleBackground('ubahBgBtn2')">Ganti Background</button>
+
+<!-- tombol kontrol musik -->
+<button id="music2Btn" data-audio="music2Audio" onclick="toggleMusicByIds('music2Audio','music2Btn')">Play Music</button>
+
+<!-- audio: naik dua tingkat ke Belajar_html lalu Folder audio -->
+<audio id="music2Audio" src="../../Folder%20audio/epic%20moment.mp3" preload="none" loop></audio>
+
+<!-- script lokal (ada di folder yang sama) -->
+<script src="music.js"></script>
+<script src="ubah_warna.js"></script>
+</body>
+</html>
