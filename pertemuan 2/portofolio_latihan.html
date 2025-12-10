@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+        nav {
+            background: white;
+            padding: 15px 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        /* Profil & Pengalaman Kerja */
+        .row {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 320px;
+        }
+        .card h3 {
+            background: #187bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 0 20px 0;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+        }
+        .center {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #187bff;
+            color: white;
+            border-radius: 5px;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+        /* Proyek */
+        .project-title {
+            margin-top: 50px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .projects {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 32%;
+            min-width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .project-card .info {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Portofolio</div>
+        <div>
+            <a href="/Belajar_html/Praktikum/HTML+JS+CSS/portofolio.html">Home</a>
+            <a href="/Belajar_html/Praktikum/JavaScript/pertemuan1.html">Projects</a>
+            <a href="/Belajar_html/Tugas/Uts.Fitriyanto.html">Form</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Profil & Pengalaman -->
+        <div class="row">
+
+            <!-- Profil -->
+            <div class="card">
+                <h3>Profil</h3>
+                <img src="orang.png" class="profile-img" alt="foto profil">
+                <div class="center">
+                    <h2>John Doe</h2>
+                    <p>Networking & Web Programmer</p>
+                    <p>
+                        Saya seorang pengembang web dan pengajar di bidang teknik informatika. 
+                        Dengan pengalaman dalam jaringan komputer dan pemrograman.
+                    </p>
+                    <button class="btn" onclick="ubahBg()">Ubah Warna Background</button>
+                </div>
+            </div>
+
+            <!-- Pengalaman Kerja -->
+            <div class="card">
+                <h3>Pengalaman Kerja</h3>
+
+                <p><b>Frontend Developer di XYZ Corp.</b><br>
+                    Bertanggung jawab atas pengembangan antarmuka pengguna dan pengalaman pengguna untuk berbagai aplikasi web.
+                </p>
+                <br>
+                <p><b>Backend Developer di ABC Ltd.</b><br>
+                    Mengembangkan logika server, integrasi basis data, dan API untuk mendukung aplikasi web.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Proyek -->
+        <div class="project-title">Proyek</div>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <img src="pengalaman kerja.jpeg" alt="">
+                <div class="info">
+                    <h4>Fotografi</h4>
+                    <p>Deskripsi singkat tentang project 1.</p>
+                    <a class="btn" href="#">Lihat Detail</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="pengalaman kerja2.jpeg" alt="">
+                <div class="info">
+                    <h4>Networking</h4>
+                    <p>Deskripsi singkat tentang project 2.</p>
+                    <a class="btn" href="#">Lihat Detail</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="pengalaman kerja3.jpeg" alt="">
+                <div class="info">
+                    <h4>Web Development</h4>
+                    <p>Deskripsi singkat tentang project 3.</p>
+                    <a class="btn" href="#">Lihat Detail</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function ubahBg(){
+            document.body.style.background = 
+                document.body.style.background === "white" ? "#f4f4f4" : "white";
+        }
+    </script>
+
+</body>
+</html>
